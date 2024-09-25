@@ -1,0 +1,24 @@
+To install the AWS CLI on your Ubuntu server, you can follow these steps:
+
+Step 1: Update the package manager
+sudo apt update
+
+Step 2: Install required packages
+Install unzip and curl if they are not already installed:
+sudo apt install unzip curl -y
+
+Step 3: Download the AWS CLI package
+Use curl to download the latest AWS CLI version (v2):
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+Step 4: Unzip the package
+unzip awscliv2.zip
+
+Step 5: Install AWS CLI
+sudo ./aws/install
+
+Step 6: Verify the installation
+After the installation completes, verify it by checking the version:
+aws --version
+
+This will display the AWS CLI version, confirming that it's installed and working.
